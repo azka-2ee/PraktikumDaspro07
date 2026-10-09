@@ -28,11 +28,29 @@ public class StudiKasus207 {
                 System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
         
         } else if (jumlahDokumen == 3) {
-            System.out.println("Status: Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan.");
+            System.out.println("Peringkat juara: ");
+            juara = sc.nextByte();
+            if (juara >= 1 && juara <= 3) {
+                System.out.println("Status: Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan.");
+            } else {
+                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+            }
         } else if (jumlahDokumen == 2) {
-            System.out.println("Status: Dokumen tidak lengkap (kurang 2 dokumen). Dana penghargaan tidak diberikan.");
+            juara = sc.nextByte();
+            if (juara >= 1 && juara <= 3) {
+                System.out.println("Status: Dokumen tidak lengkap (kurang 2 dokumen). Dana penghargaan tidak diberikan.");
+            } else {
+                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+            }
+            
         } else {
-            System.out.println("Status: Dokumen tidak lengkap (kurang 3 dokumen). Dana penghargaan tidak diberikan.");
+            juara = sc.nextByte();
+            if (juara >= 1 && juara <= 3) {
+                System.out.println("Status: Dokumen tidak lengkap (kurang 3 dokumen). Dana penghargaan tidak diberikan.");
+            } else {
+                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+            }
+            
         }
     } else if (jenis.equalsIgnoreCase("PKM")) {
         System.out.println("Jumlah dokumen: ");
