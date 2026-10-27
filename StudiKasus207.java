@@ -8,39 +8,39 @@ public class StudiKasus207 {
     byte jumlahDokumen, juara, statusPKM;
 
     // Input
-    System.out.println("Nama Mahasiswa: ");
+    System.out.print("Nama Mahasiswa: ");
     nama = sc.nextLine();
-    System.out.println("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): ");
+    System.out.print("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA): ");
     jenis = sc.nextLine();
     
     // Proses dan output
     if (jenis.equalsIgnoreCase("BELMAWA") || 
         jenis.equalsIgnoreCase("BAKORMA") || 
         jenis.equalsIgnoreCase("MANDIRI")) {
-        System.out.println("Jumlah dokumen: ");
+        System.out.print("Jumlah dokumen: ");
         jumlahDokumen = sc.nextByte();
         if (jumlahDokumen == 4) {
-            System.out.println("Peringkat juara: ");
+            System.out.print("Peringkat juara: ");
             juara = sc.nextByte();
             if (juara >= 1 && juara <= 3) {
-                System.out.println("Status: Berhak memperoleh dana penghargaan.");
+                System.out.print("Status: Berhak memperoleh dana penghargaan.");
             } else
-                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+                System.out.print("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
         
         } else if (jumlahDokumen == 3) {
-            System.out.println("Peringkat juara: ");
+            System.out.print("Peringkat juara: ");
             juara = sc.nextByte();
             if (juara >= 1 && juara <= 3) {
-                System.out.println("Status: Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan.");
+                System.out.print("Status: Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan.");
             } else {
-                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+                System.out.print("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
             }
         } else if (jumlahDokumen == 2) {
             juara = sc.nextByte();
             if (juara >= 1 && juara <= 3) {
-                System.out.println("Status: Dokumen tidak lengkap (kurang 2 dokumen). Dana penghargaan tidak diberikan.");
+                System.out.print("Status: Dokumen tidak lengkap (kurang 2 dokumen). Dana penghargaan tidak diberikan.");
             } else {
-                System.out.println("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
+                System.out.print("Status: Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).");
             }
             
         } else {
@@ -53,7 +53,7 @@ public class StudiKasus207 {
             
         }
     } else if (jenis.equalsIgnoreCase("PKM")) {
-        System.out.println("Jumlah dokumen: ");
+        System.out.print("Jumlah dokumen: ");
         jumlahDokumen = sc.nextByte();
         if (jumlahDokumen == 4) {
             System.out.println("Status pendanaan PKM (1 = lolos, 0 = tidak lolos): ");
